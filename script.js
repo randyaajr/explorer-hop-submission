@@ -1,4 +1,3 @@
-let itemCounter = 0;
 const eHopSub = () => {
   let item = document.createElement("div");
   let itemSize = document.getElementById("sizeSelection").value + "px";
@@ -8,6 +7,5 @@ const eHopSub = () => {
   item.style.backgroundColor = itemColour;
   item.classList.add("box");
   document.getElementById("genBoxes").appendChild(item);
-  itemCounter++;
 };
 document.getElementById("boxGeneration").onclick = eHopSub;
