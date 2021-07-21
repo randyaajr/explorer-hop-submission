@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Explorer Hop </title>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <!--
+       1. Create a form 
+       2. Input options are colour and box size
+       3. Generate a box based on the colour and size selected. 
+    -->
+    <header>
+        <h1>
+            Explorer Hop Submission
+        </h1>
+    </header>
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="colourSelection">Please select a colour:</label>
+                </div>
+                <div class="col-75">
+                    <input type="color" id="colourSelection" value="#123456" name="colourSelection">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="sizeSelection">Please select a size (px):</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="sizeSelection" value="250" name="sizeSelection">
+                </div>
+            </div>
+            <div class="row">
+                <input type="button" id="boxGeneration" value="Create Box">
+            </div>
+        </form>
+    </div>
+    <div id="genBoxes"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
